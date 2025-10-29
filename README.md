@@ -12,6 +12,7 @@ The projects demonstrate I/O control, simple arithmetic, and conditional branchi
 | **clr_sreg.s**      | Clears the AVR Status Register (SREG) to initialize the system. |
 | **led_on.s**        | Turns on LEDs connected to D8, D10, and D11; D9 remains off. |
 | **portc_compare.s** | Reads 4-bit input from PORTC, adds 2 if <8, subtracts 1 if ≥8, outputs the result to PORTB LEDs. |
+| **blink.s**         | Blinks the LED connected to D8 using a software delay loop. |
 
 ---
 
