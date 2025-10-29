@@ -9,16 +9,17 @@ main:	ldi r16, 0
 mainloop:
 	ldi r16, 0x01
 	out PORTB, r16
-	call halfsec
+	ldi r17, 40
+	call delay
 	ldi r16, 0x00
 	out PORTB, r16
-	call halfsec
+	ldi r17, 20
+	call delay
 rjmp mainloop
 
-halfsec:
-	ldi r17, 25
+delay:
 	outer:
-		ldi r18, 248
+		ldi r18, 125
 		middle:
 			ldi r19, 255
 			inner:
