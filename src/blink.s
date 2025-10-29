@@ -6,6 +6,7 @@ main:	ldi r16, 0
 	out SREG, r16
 	ldi r16, 0x0F
 	out DDRB, r16
+mainloop:
 	ldi r16, 0x01
 	out PORTB, r16
 	ldi r17, 25
@@ -42,4 +43,4 @@ main:	ldi r16, 0
 		dec r17
 		cpi r17, 0
 		brne outer2
-	mainloop:	rjmp mainloop
+rjmp mainloop
